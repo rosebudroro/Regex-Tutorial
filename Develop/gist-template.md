@@ -102,4 +102,4 @@ In conclusion, the regular expression pattern is checking for an email address b
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Hello! I'm a coder, I hoped this tutorial helped. Thank you for reading! To see more of my projects: <a href="https://github.com/rosebudroro">Github</a>
