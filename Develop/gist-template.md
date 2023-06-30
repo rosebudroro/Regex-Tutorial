@@ -21,10 +21,10 @@ The code above is a search pattern for matching an email. It will check to see i
 
 ### Anchors
 
-The position anchors ^ and $ are considered anchors.
+The position anchors `^` and `$` are considered anchors.
 
-The ^ anchor signifies a string that begins with the characters that follow it.
-The $ anchor signifies a string that ends with the characters that precede it. 
+The `^` anchor signifies a string that begins with the characters that follow it.
+The `$` anchor signifies a string that ends with the characters that precede it. 
 
 ### Quantifiers
 Quantifiers sets the limits of the string that your regex matches or an individual section of that strong.
@@ -33,9 +33,9 @@ Quantifiers sets the limits of the string that your regex matches or an individu
 `+` Matches the pattern one or more times
 `?` Matches the pattern zero or one time
 `{ }`  Curly brackets can provide ways to set limits for a match:
-	{ n } - matches the pattern exactly n number of times
-	{ n, } - matches the pattern at least n number of times
-	{ n, x } - matches the pattern from a minimum of n number of times to a maximum of x number of times
+	`{ n }` - matches the pattern exactly n number of times
+	`{ n, }` - matches the pattern at least n number of times
+	`{ n, x }` - matches the pattern from a minimum of n number of times to a maximum of x number of times
 
 So in our email regex:
 
@@ -46,10 +46,10 @@ So in our email regex:
 ### Character Classes
 A character class in a regex defines a set of characters. They provide a concise way to match a single character.
 
-[  ] Matches any single character within the Brackets
-[A-Z ] Matches any Capital Letter from A through Capital Letter Z 
-[a-z] Matches any lowercase letter from a through lowercase letter z
-[0-9] Matches any single digit from 0 to 9
+`[  ]` Matches any single character within the Brackets
+`[A-Z]` Matches any Capital Letter from A through Capital Letter Z 
+`[a-z]` Matches any lowercase letter from a through lowercase letter z
+`[0-9]` Matches any single digit from 0 to 9
 
 Character Ranges
 Special Character Escaping, some characters have predetermined special meaning so to match these specific characters, you need to escape them with a blackslash.
@@ -61,8 +61,8 @@ Important note, with the classes above, we don’t need to include every charact
 Shorthand Character Classes
 Regular expressions that are shorthand notation for commonly used characters:
 
-`\d` is a character classes that is equivalent to the bracket expression [0-9]
-`\w` represents any word character that is equivalent to [a-zA-Z0-9_]
+`\d` is a character classes that is equivalent to the bracket expression `[0-9]`
+`\w` represents any word character that is equivalent to `[a-zA-Z0-9_]`
 `\s`represents any white space character (space, tab, newline etc)
 
 
@@ -90,10 +90,10 @@ Essentially, `[abcdefghijklmnopqrstuvwxyz]` and `[a-z]` are the same thing.
 
 So in matching our email, it will look for
 
-[a-z] This string can contain any lowercase letter between a-z.
-[0-9] The string can contain any number between 0-9.
-[ _ ] The string can contain an underscore.
-[ \.-]
+`[a-z]` This string can contain any lowercase letter between a-z.
+`[0-9]` The string can contain any number between 0-9.
+`[ _ ]` The string can contain an underscore.
+`[ \.-]`
 
 
 
